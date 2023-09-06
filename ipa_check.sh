@@ -32,7 +32,7 @@ invalidResults=()
 # Reference: https://github.com/MobSF/Mobile-Security-Framework-MobSF/blob/bbaec066344f486c96a3d57be3287a74ea18e2a0/StaticAnalyzer/views/ios/binary_analysis.py#L141
 function bannedApis() {
   if [[ $isExamineBannedApi == 1 ]];then
-    apis="_alloca;_gets;_memcpy;_printf;_scanf;_sprintf;_sscanf;_strcat;StrCat;_strcpy;StrCpy;_strlen;StrLen;_strncat;StrNCat;_strncpy;StrNCpy;_strtok;_swprintf;_vsnprintf;_vsprintf;_vswprintf;_wcscat;_wcscpy;_wcslen;_wcsncat;_wcsncpy;_wcstok;_wmemcpy;_fopen;_chmod;_chown;_stat;_mktemp"
+    apis="___NSMakeSpecialForwardingCaptureBlock;_alloca;_gets;_memcpy;_printf;_scanf;_sprintf;_sscanf;_strcat;StrCat;_strcpy;StrCpy;_strlen;StrLen;_strncat;StrNCat;_strncpy;StrNCpy;_strtok;_swprintf;_vsnprintf;_vsprintf;_vswprintf;_wcscat;_wcscpy;_wcslen;_wcsncat;_wcsncpy;_wcstok;_wmemcpy;_fopen;_chmod;_chown;_stat;_mktemp"
     echo ${apis//;/ }
   else
     apis=""
